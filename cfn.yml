@@ -10,6 +10,12 @@ Resources:
       ContentUri: ./archive.zip
       CompatibleRuntimes: !Ref Runtimes
       LicenseInfo: !Ref License
+  Permission:
+    Type: AWS::Lambda::LayerVersionPermission
+    Properties:
+      Action: lambda:GetLayerVersion
+      LayerVersionArn: !Ref Layer
+      Principal: '*'
 
 Parameters:
   Name:
