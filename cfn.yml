@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  Layer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Ref Name
+      Description: !Ref Description
+      ContentUri: ./archive.zip
+      CompatibleRuntimes: !Ref Runtimes
+      LicenseInfo: !Ref License
+
+Parameters:
+  Name:
+    Type: String
+  Description:
+    Type: String
+  Runtimes:
+    Type: CommaDelimitedList
+  License:
+    Type: String
+
+Outputs:
+  Layer:
+    Value: !Ref Layer
