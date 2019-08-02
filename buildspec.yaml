@@ -3,6 +3,8 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
+    commands:
+      - echo "Hi!"
   build:
     commands:
       - make publish
