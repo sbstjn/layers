@@ -10,6 +10,8 @@ $ > AWS_PROFILE=sbstjn \
 ## Layers
 
 ##### express
-`arn:aws:lambda:eu-central-1:198537873635:layer:express:11`
+`arn:aws:lambda:eu-central-1:198537873635:layer:express:12`
 ##### razzle
-`arn:aws:lambda:eu-central-1:198537873635:layer:razzle:15`
+`arn:aws:lambda:eu-central-1:198537873635:layer:razzle:16`
+##### react
+`arn:aws:lambda:eu-central-1:198537873635:layer:react:1`
