@@ -14,6 +14,7 @@ yarn add \
   react-dom \
   react-helmet \
   react-router-dom \
+  react-stickynode \
   request \
   request-promise \
   styled-components
